@@ -6,10 +6,15 @@
             "use": "@vercel/node"
         }
     ],
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/"
-        }
-    ]
+   "rewrites": [
+    {
+        "source": "/upload/(.*)",
+        "destination": "/upload/$1"
+    },
+    {
+        "source": "/(.*)",
+        "destination": "/"
+    }
+]
+
 }
