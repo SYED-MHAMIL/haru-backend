@@ -1,8 +1,4 @@
-import path from 'path';
-
 const getImagePath = (image) => {
-    // Use an absolute path that resolves correctly in both local and Vercel environments
-    return path.join(__dirname, '..', 'public', 'uploads', image); // Adjust based on your structure
+    // Joins the upload directory path with the image file name to create a full path
+    return path.join("uploads", image)
 }
-
-export { getImagePath }
